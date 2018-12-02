@@ -1,0 +1,10 @@
+riot.js
+  ね、簡単でしょ？ (ボ並感)
+
+npm install --save riot
+
+npm install --save-dev webpack
+npm install --save-dev webpack-cli
+
+npm install --save-dev npm-run-all
+npm install --save-dev rimraf
