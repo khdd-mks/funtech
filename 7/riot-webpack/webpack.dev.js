@@ -22,23 +22,15 @@ module.exports = {
         }]
       },
 			{
+				test: /\.js$/,
 				include: [path.resolve(__dirname, 'src')],
-				loader: 'babel-loader',
-
-				options: {
-					plugins: ['syntax-dynamic-import'],
-
-					presets: [
-						[
-							'env',
-							{
-								modules: false
-							}
-						]
-					]
+				use: {
+          loader: 'babel-loader',
+          options: {
+						plugins: ['syntax-dynamic-import'],
+            presets: ['@babel/preset-env']
+          }
 				},
-
-				test: /\.js$/
 			},
 			{
 				test: /\.(scss|css)$/,

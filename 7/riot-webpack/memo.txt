@@ -3,6 +3,7 @@ riot.js
 
 [環境構築 - 新規]
 npm install --save riot
+npm install --save riot-route
 
 npm install --save-dev webpack
 npm install --save-dev webpack-cli
