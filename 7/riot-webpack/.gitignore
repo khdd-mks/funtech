@@ -1,3 +1,4 @@
 /dist
 /node_modules
 /.yo-rc.json
+/deploy/files

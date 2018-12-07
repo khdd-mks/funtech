@@ -1,4 +1,4 @@
 import riot from 'riot';
-import todo from '../dist/tags/todo';
+require('./tags/todo.tag');
 
 riot.mount('todo');

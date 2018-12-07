@@ -1,6 +1,7 @@
 riot.js
   ね、簡単でしょ？ (ボ並感)
 
+[環境構築 - 新規]
 npm install --save riot
 
 npm install --save-dev webpack
@@ -8,3 +9,16 @@ npm install --save-dev webpack-cli
 
 npm install --save-dev npm-run-all
 npm install --save-dev rimraf
+
+npm install  --save-dev riot-tag-loader
+npm install  --save-dev riot-compiler
+
+[環境構築 - git clone 後]
+npm install
+
+[deploy]
+./deploy.sh
+
+[実行 - docker]
+docker run -p 8888:80 -d riot-webpack
+# http://localhost:8888/ でアクセス可能
