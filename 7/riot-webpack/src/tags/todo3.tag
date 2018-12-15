@@ -3,6 +3,8 @@
   <!-- layout -->
   <h3>{ opts.title }</h3>
 
+  <menu2></menu2>
+
   <ul>
     <li each={ item, i in items }>{ item }</li>
   </ul>
@@ -21,6 +23,12 @@
 
   <!-- logic -->
   <script>
+    // riotはimport不要 (というかimportするとコケる)
+    //import riot from 'riot';
+    require("./menu2.tag");
+
+    riot.mount('menu2');
+
     this.items = []
 
     add(e) {
